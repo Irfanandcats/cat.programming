@@ -34,7 +34,7 @@ local playerHook, selected
 local anchorHooks = {}
 
 plr.Chatted:Connect(function(message)
-	if message:find("%.", 1) then
+	if message:match("^%.", 1) then
 		local arguments = {}
 
 		message = message:gsub("%.", "")
